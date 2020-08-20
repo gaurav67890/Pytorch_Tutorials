@@ -1,5 +1,7 @@
 # Hyper-parameter tuning in GCP
 
+### Note: Just incase you are master branch, switch to feat/AICAR-325-hyperparameter-tuning-scratch branch. For GCP training, all the required code are inside feat/AICAR-325-hyperparameter-tuning-scratch branch, not inside master.
+
 ### 1. Install google cloud and login https://cloud.google.com/sdk/docs
 ```
 gcloud auth login
