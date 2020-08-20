@@ -59,7 +59,8 @@ gcloud ai-platform jobs describe hp_tuning_scratch_container_job_20200819_204006
 
 #this will generate the url for the job status and log which you can click. 
 ```
+### 8. Mission accomplished, Have fun tuning !
 
-
+![alt text][http://digitalspyuk.cdnds.net/16/27/768x384/landscape-1467725698-leonardo-di-caprio-great-gatsby.gif]
 
 
