@@ -36,3 +36,30 @@ export JOB_NAME=hp_tuning_scratch_container_job_$(date +%Y%m%d_%H%M%S)
 ```
 git clone https://github.com/gaurav67890/Detectron2 detectron2_repo -b feat/AICAR-325-hyperparameter-tuning-scratch
 ```
+
+### 5. Create the image using the Dockerfile from the above code.
+```
+docker build --no-cache --build-arg USER_ID=$UID -f Dockerfile -t $IMAGE_URI ./
+```
+
+### 5. Get the image id for the above image, and use it to push the docker image to gcp
+```
+docker tag image_ID $IMAGE_URI
+docker push $IMAGE_URI
+
+```
+
+### 6. We are almost done, now we just need to run this below command and start the gcp training
+```
+gcloud ai-platform jobs submit training $JOB_NAME --job-dir $JOB_DIR --region $REGION --master-image-uri $IMAGE_URI --config hyper_tuning.yaml
+```
+### 7. See the status of job using
+```
+gcloud ai-platform jobs describe hp_tuning_scratch_container_job_20200819_204006
+
+#this will generate the url for the job status and log which you can click. 
+```
+
+
+
+
