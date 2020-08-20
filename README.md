@@ -61,6 +61,6 @@ gcloud ai-platform jobs describe hp_tuning_scratch_container_job_20200819_204006
 ```
 ### 8. Mission accomplished, Have fun tuning !
 
-![alt text][http://digitalspyuk.cdnds.net/16/27/768x384/landscape-1467725698-leonardo-di-caprio-great-gatsby.gif]
+![alt text][https://github.com/gaurav67890/Detectron2/blob/feat/AICAR-325-hyperparameter-tuning-scratch/landscape-1467725698-leonardo-di-caprio-great-gatsby.gif]
 
 
